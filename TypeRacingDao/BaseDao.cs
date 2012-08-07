@@ -1,35 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using NHibernate;
 using NHibernate.Cfg;
 
 namespace TypeRacingDao
 {
-    class BaseDao
+    public static class BaseDao
     {
-        private ISession m_session;
-        private Configuration m_config;
+        private static ISession m_session;
+        private static ISessionFactory m_sessionFactory;
+        private static Configuration m_config;
 
 
-        public ISession session { 
+        public static ISession Session
+        {
             get
             {
                 if (m_config == null)
                 {
-                    m_config = new Configuration().AddAssembly("TypeRacing");
+                    m_config = new Configuration().Configure();
 
+                    
                 }
                 if (m_session == null)
                 {
-                    //m_session = 
+                    m_sessionFactory = m_config.BuildSessionFactory();
+                    m_session = m_sessionFactory.OpenSession();
                 }
-            } 
-        set
+                return m_session;
+            }
+            private set { }
+        }
+
+        public static T Get<T>(int id)
         {
             
+            T result = default(T);
+            
+                result =  Session.Get<T>(id);
+             
+            return result;
         }
+
+        public static bool SaveOrUpdate<T>(T item)
+        {
+            bool result = false;
+            
+            using (var transaction = Session.BeginTransaction())
+            {
+                Session.SaveOrUpdate(item);
+                transaction.Commit();
+                result = transaction.WasCommitted;
+            }
+            return result;
         }
     }
 }

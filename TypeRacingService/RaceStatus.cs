@@ -13,7 +13,7 @@ namespace Shared
         /// <value>
         /// The positions.
         /// </value>
-        public Dictionary<Player, int> Positions { get; set; }
+        public Dictionary<PlayerInfo, int> Positions { get; set; }
 
         /// <summary>
         /// Gets or sets the accuracies.
@@ -21,7 +21,7 @@ namespace Shared
         /// <value>
         /// The accuracy.
         /// </value>
-        public Dictionary<Player, double> Accuracy { get; set; }
+        public Dictionary<PlayerInfo, double> Accuracy { get; set; }
 
         /// <summary>
         /// Gets or sets the streaks.
@@ -29,6 +29,6 @@ namespace Shared
         /// <value>
         /// The streak.
         /// </value>
-        public Dictionary<Player, int> Streak { get; set; }
+        public Dictionary<PlayerInfo, int> Streak { get; set; }
     }
 }

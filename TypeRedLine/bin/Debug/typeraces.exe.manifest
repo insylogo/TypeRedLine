@@ -42,36 +42,72 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Shared.dll" size="9728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Iesi.Collections.dll" size="32768">
+      <assemblyIdentity name="Iesi.Collections" version="1.0.1.0" publicKeyToken="AA95F207798DFDB4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WoKNxqC7+9EXDSf1exMxfoK1pNQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NHibernate.dll" size="3565056">
+      <assemblyIdentity name="NHibernate" version="3.3.1.4000" publicKeyToken="AA95F207798DFDB4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>iBI59xwghkJt60+fPhxDXHozOB4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Shared.dll" size="7168">
       <assemblyIdentity name="Shared" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bETnbAdznUEMJBPE4KGw3ZeH6po=</dsig:DigestValue>
+        <dsig:DigestValue>aRgMHz2G8XwEMJog6MWUkYWo0fQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="19968">
       <assemblyIdentity name="typeraces" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8Nwzjk5HYJMnOhOi8f1HuEnT7Ys=</dsig:DigestValue>
+        <dsig:DigestValue>i2xSD4FKbWZzo0EtHbVBXgNiO04=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Races\races.trl" size="2081">
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TypeRacingDao.dll" size="12800">
+      <assemblyIdentity name="TypeRacingDao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jhoKSnxC1V1uwNeYRhUZtOGhipU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Races\races.trl" size="2129">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>G6VYuuOjGD81ErjSlIiOc1tpllw=</dsig:DigestValue>
+      <dsig:DigestValue>z9jAsNoDHfD/k3l3RCToZtqKr14=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

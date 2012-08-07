@@ -154,6 +154,10 @@
       <Project>{23D26764-2E60-42A3-A1C7-D0201C5341D3}</Project>
       <Name>Shared</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TypeRedLine\TypeRedLine.csproj">
+      <Project>{230825E3-54ED-4EBD-8C5B-8FE2537F1D44}</Project>
+      <Name>TypeRedLine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

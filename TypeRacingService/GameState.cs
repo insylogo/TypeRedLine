@@ -23,7 +23,7 @@ namespace TypeRacingService
         /// The race.
         /// </value>
         [DataMember]
-        public Race Race { get; set; }
+        public RaceInfo Race { get; set; }
 
         /// <summary>
         /// Gets or sets the players.
@@ -32,7 +32,7 @@ namespace TypeRacingService
         /// The players.
         /// </value>
         [DataMember]
-        public IList<Player> Players { get; set; }
+        public IList<PlayerInfo> Players { get; set; }
 
         /// <summary>
         /// Gets or sets the status.

@@ -17,9 +17,9 @@ namespace TypeRedLineWeb.Models
         public bool IsStarted { get; private set; }
 
 
-        public List<Player> Players { get; set; } 
+        public List<PlayerInfo> Players { get; set; } 
         
-        public Dictionary<Player, double> Scores { get; set; }
+        public Dictionary<PlayerInfo, double> Scores { get; set; }
 
         public string Text { get; set; }
 

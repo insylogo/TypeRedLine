@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRaceInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RaceInfo>
+    <Text>Zerp to the burp, have a durp; love a twerp. Amerikkka h8s u. But I don't!</Text>
+    <Difficulty>Medium</Difficulty>
+  </RaceInfo>
+  <RaceInfo>
+    <Text>The witchdoctor is the weirdest class in all of diablo 3. Fuck diablo 3 though, it kind of sucks.</Text>
+    <Difficulty>Easy</Difficulty>
+  </RaceInfo>
+  <RaceInfo>
+    <Text>Don't even worry about it, bro. It's all good in the end.</Text>
+    <Difficulty>VeryEasy</Difficulty>
+  </RaceInfo>
+  <RaceInfo>
+    <Text>Roronoa Zoro is a pirate, former bounty hunter, and one of the main protagonists of One Piece. He is the first member to join the Straw Hat Pirates and to date is considered the largest threat and most dangerous member in the crew after Luffy. His fame as a master swordsman and his great strength, along with the actions of his captain, sometimes leads others to believe that he must be the true captain and is widely thought to be the first mate by those outside the crew. He is one of the top three fighters in the crew, and his dream is to become the greatest swordsman in the world.</Text>
+    <Difficulty>Hard</Difficulty>
+  </RaceInfo>
+  <RaceInfo>
+    <Text>Monkey D. Luffy is a pirate and the main protagonist of the anime and manga, One Piece. He is the son of the Revolutionary Army's commander, Monkey D. Dragon, the grandson of the famed Marine, Monkey D. Garp, the foster son of a mountain bandit, Curly Dadan, and the adopted brother of the late "Fire Fist" Portgas D. Ace and Sabo. His life long goal is to become the Pirate King by finding the legendary treasure left behind by the Pirate King, Gol D. Roger. He believes that being Pirate King means one has the most freedom in the world. He has eaten the Gomu Gomu no Mi. As the founder and captain of the Straw Hat Pirates, he is the first member that makes up the crew, as well as one of its top three fighters.</Text>
+    <Difficulty>Insane</Difficulty>
+  </RaceInfo>
+</ArrayOfRaceInfo>

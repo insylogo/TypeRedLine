@@ -5,17 +5,18 @@ Copy the template to your NHibernate.Test project folder and rename it in hibern
 for your own use before compile tests in VisualStudio.
 -->
 <!-- This is the ByteFX.Data.dll provider for MySql -->
-<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  
 	<session-factory name="TypeRacingDao">
-		<property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
-		<property name="connection.connection_string">
-			Database=racedb;Data Source=localhost;User Id=typeservice;Password=zuglet
-		</property>
-		<property name="dialect">NHibernate.Dialect.MySQLDialect</property>
-
-    <mapping resource="Player.hbm.xml" assembly="TypeRacing" />
-    <mapping resource="Record.hbm.xml" assembly="TypeRacing" />
-    <mapping resource="Race.hbm.xml" assembly="TypeRacing" />
     
+		<property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+    <property name="connection.connection_string">Database=racedb;Data Source=localhost;User Id=typeservice;Password=zuglet</property>
+		<!--<property name="connection.connection_string">Database=racedb;Data Source=98.232.190.146;User Id=typeservice;Password=zuglet</property>-->
+		
+
+    <mapping resource="Player.hbm.xml" assembly="TypeRacingDao" />
+    <mapping resource="Record.hbm.xml" assembly="TypeRacingDao" />
+    <mapping resource="Race.hbm.xml" assembly="TypeRacingDao" />
 	</session-factory>
 </hibernate-configuration>

@@ -9,7 +9,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using Shared;
+using TypeRacingDao.Entities;
 using TypeRedLine.Properties;
+using TypeRacingDao;
 
 namespace TypeRedLine
 {
@@ -36,7 +38,7 @@ namespace TypeRedLine
         private int currentHighlightLength;
         private int currentLine;
 
-        private List<Race> races;
+        private IList<RaceInfo> races;
 
         private Random gen;
         private DateTime? start;
@@ -54,13 +56,19 @@ namespace TypeRedLine
             keyStrokeCount = 0;
             mistakeCount = 0;
 
-            Type[] types = { typeof(Player), typeof(Race) };
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Race>), types);
+            Type[] types = { typeof(PlayerInfo), typeof(RaceInfo) };
+            XmlSerializer serializer = new XmlSerializer(typeof(List<RaceInfo>), types);
+
             var reader = new StreamReader(new FileStream(Application.StartupPath + "\\Races\\races.trl", FileMode.Open, FileAccess.Read));
+            
 
-            races = serializer.Deserialize(reader) as List<Race>;
-
+            // original xml loading
+            //races = serializer.Deserialize(reader) as List<RaceInfo>;
             reader.Close();
+
+
+            races = new List<RaceInfo> {new RaceInfo(BaseDao.Get<Race>(1)), new RaceInfo(BaseDao.Get<Race>(2)) };
+
 
             gen = new Random();
 

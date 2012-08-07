@@ -44,15 +44,12 @@
   <ItemGroup>
     <Compile Include="Difficulty.cs" />
     <Compile Include="GameSettings.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Record.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Race.cs" />
     <Compile Include="RichTextBoxExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

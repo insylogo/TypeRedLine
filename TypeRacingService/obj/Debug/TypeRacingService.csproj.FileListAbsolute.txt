@@ -5,3 +5,14 @@ C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\b
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\obj\Debug\TypeRacingService.dll
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\obj\Debug\TypeRacingService.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\Races\races.trl
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\NHibernate.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\Iesi.Collections.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\typeraces.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\NHibernate.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\NHibernate.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\Iesi.Collections.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingService\bin\Iesi.Collections.xml

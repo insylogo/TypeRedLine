@@ -8,3 +8,13 @@ C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Test
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\TypeRedLineWeb.Tests.dll
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\TypeRedLineWeb.Tests.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\NHibernate.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\Iesi.Collections.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\typeraces.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\NHibernate.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\NHibernate.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\Iesi.Collections.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\Iesi.Collections.xml

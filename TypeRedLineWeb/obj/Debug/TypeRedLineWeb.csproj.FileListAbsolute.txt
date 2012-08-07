@@ -7,3 +7,14 @@ C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\obj\
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\obj\Debug\TypeRedLineWeb.pdb
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Shared.dll
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Races\races.trl
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\NHibernate.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Iesi.Collections.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\typeraces.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\NHibernate.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\NHibernate.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Iesi.Collections.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Iesi.Collections.xml

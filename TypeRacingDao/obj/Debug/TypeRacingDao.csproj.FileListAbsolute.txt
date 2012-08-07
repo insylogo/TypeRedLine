@@ -12,3 +12,9 @@ C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\D
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\NHibernate.xml
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Iesi.Collections.pdb
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Iesi.Collections.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\TypeRacingDao.dll.config
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\app.config
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\TypeRacingDao.Properties.Resources.resources
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\hibernate.cfg.xml

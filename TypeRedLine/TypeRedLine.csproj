@@ -105,6 +105,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\PlayerInfo.cs" />
+    <Compile Include="Entities\RaceInfo.cs" />
+    <Compile Include="Entities\RecordInfo.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +170,10 @@
       <Project>{23D26764-2E60-42A3-A1C7-D0201C5341D3}</Project>
       <Name>Shared</Name>
       <Aliases>global, Shared</Aliases>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeRacingDao\TypeRacingDao.csproj">
+      <Project>{1F42F059-E3A7-48C3-ABEA-26CFE190063F}</Project>
+      <Name>TypeRacingDao</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -16,3 +16,14 @@ C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x86
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x86\Debug\typeraces.application
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x86\Debug\typeraces.pdb
 C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\Races\races.trl
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\Nhibernate\nhibernate-configuration.xsd
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\NHibernate.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\Iesi.Collections.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\NHibernate.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\NHibernate.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\Iesi.Collections.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\Iesi.Collections.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\app.config
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\Debug\hibernate.cfg.xml

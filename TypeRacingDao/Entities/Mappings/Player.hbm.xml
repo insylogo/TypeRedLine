@@ -1,11 +1,9 @@
 <?xml version="1.0" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" assembly="TypeRacing">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" assembly="TypeRacingDao" namespace="TypeRacingDao.Entities">
   <class
-		table="Player" entity-name="Player">
-    <id
-			name="PlayerId" column="id"
-			unsaved-value="0"
-		>
+		table="Player" name="Player" entity-name="Player">
+    <id name="PlayerId" column="id"	unsaved-value="0" type="Int32">
+      
       <generator class="increment" />
       <!-- unsaved-value used to be null and generator was increment in h2.0.3 -->
     </id>
