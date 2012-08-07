@@ -1,0 +1,96 @@
+﻿@model TypeRedLineWeb.Models.TypeRedLineModel
+
+<script type="text/javascript" language="javascript">
+    var currentWord;
+    var currentText;
+    var currentTextIndex;
+    var words;
+    var currentWord;
+    var currentIndex;
+    var defaultFont;
+
+    var keyStrokeCount;
+    var mistakeCount;
+    var previousLength;
+
+    var currentHighlightStart;
+    var currentHighlightLength;
+    var currentLine;
+
+    var races;
+
+    var gen;
+    var start;
+    var finish;
+
+    var bestRates;
+    var cpm;
+    var wpm;
+    var wordSpans = [];
+    
+    function endRace() {
+        $("#Text1").val("");
+        $("#stats").text("WPM: " + ((currentText.length / (new Date().getTime() - start) * 1000 * 60) / 5) + "wpm");
+
+        start = null;
+        $('.word').each(function () {
+            $(this).attr("style", function () { return "background-color: lightblue;"; });
+        });
+        $('.word').first().attr("style", function () { return "background-color: pink;"; });
+        currentIndex = 0;
+        currentWord = words[currentIndex];
+    }
+    
+    function inProgress() {
+        return $("#Text1").val().length > 0;
+    }
+
+    function processInput() {
+        
+        if (inProgress() && start == null) {
+            start = new Date().getTime();
+        }
+        
+        if ($(this).val().substring(0, currentWord.length) === currentWord) {
+
+            if ($(this).val().substring(currentWord.length, currentWord.length + 1) === ' ' && currentIndex < words.length) {
+
+
+                $(this).val($(this).val().substring(currentWord.length + 1));
+                $(("#word" + currentIndex)).attr("style", function () { return "background-color: lightblue;"; });
+                currentIndex++;
+                currentWord = words[currentIndex];
+                $(("#word" + currentIndex)).attr("style", function () { return "background-color: pink;"; });
+                
+                
+            } else if (currentIndex >= words.length - 1) {
+                endRace();
+            }
+        }
+        
+    }
+
+    $().ready(function () {
+        currentText = "@(ViewBag.Text)";
+
+        start = null;
+        
+
+        $("#Text1").keyup(processInput);
+
+        words = currentText.split(" ");
+        currentIndex = 0;
+        currentWord = words[0];
+        for (var i = 0; i < words.length; ++i) {
+            wordSpans += $(".space").last().after("<span class='word' id='word" + i + "'>" + words[i] + "</span><span class='space'>&nbsp;</span>");
+        }
+        $(("#word" + currentIndex)).attr("style", function () { return "background-color: pink"; });
+    });
+</script>
+
+<div>
+    <input id="Text1" type="text" onkeyup="processInput" />
+    <div id="TextArea1" style="width: 700px; height: 400px; background-color:lightblue;">
+        <div id="stats" class="space"></div>
+    </div>
+</div>

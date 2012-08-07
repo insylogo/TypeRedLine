@@ -1,0 +1,14 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Nhibernate\nhibernate-configuration.xsd
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\TypeRacingDao.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\obj\Debug\TypeRacingDao.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\NHibernate.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Iesi.Collections.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\NHibernate.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\NHibernate.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Iesi.Collections.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRacingDao\bin\Debug\Iesi.Collections.xml

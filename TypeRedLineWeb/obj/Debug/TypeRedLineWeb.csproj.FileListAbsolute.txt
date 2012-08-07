@@ -1,0 +1,9 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\TypeRedLineWeb.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\TypeRedLineWeb.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\EntityFramework.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\EntityFramework.xml
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\obj\Debug\TypeRedLineWeb.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\obj\Debug\TypeRedLineWeb.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb\bin\Shared.pdb

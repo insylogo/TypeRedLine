@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+  <class
+		table="Record" entity-name="Record">
+    <id
+			name="RecordId" column="id"
+			unsaved-value="0"
+		>
+      <generator class="increment" />
+      <!-- unsaved-value used to be null and generator was increment in h2.0.3 -->
+    </id>
+
+
+    <one-to-one name="Race" class="Race" />
+    <one-to-one name="Player" class="Player" />
+    <property name="CPM" column="cpm" />
+    <property name="Accuracy" column="accuracy" />
+  </class>
+</hibernate-mapping>

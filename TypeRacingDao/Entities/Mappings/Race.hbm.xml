@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+  <class
+		table="Race" entity-name="Race">
+    <id
+			name="RaceId" column="id"
+			unsaved-value="0"
+		>
+      <generator class="increment" />
+      <!-- unsaved-value used to be null and generator was increment in h2.0.3 -->
+    </id>
+
+
+    <property name="Name" >
+      <column name="Name" />
+      <type name="string" />
+    </property>
+
+    <property name="Text" >
+      <column name="text" />
+      <type name="string" />
+    </property>
+
+    <property name="Difficulty">
+      <column name="Difficulty" />
+    </property>
+
+    <bag name="Records"
+            inverse="true"
+            lazy="false"
+            cascade="all">
+      <key column="race_id"/>
+      <one-to-many class="Record" entity-name="Record"/>
+    </bag>
+    
+    
+  </class>
+</hibernate-mapping>

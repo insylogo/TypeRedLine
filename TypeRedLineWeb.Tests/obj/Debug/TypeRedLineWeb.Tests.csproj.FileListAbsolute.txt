@@ -1,0 +1,10 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRedLineWeb.Tests.dll.config
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRedLineWeb.Tests.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRedLineWeb.Tests.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRedLineWeb.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\TypeRedLineWeb.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\bin\Debug\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\TypeRedLineWeb.Tests.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLineWeb.Tests\obj\Debug\TypeRedLineWeb.Tests.pdb

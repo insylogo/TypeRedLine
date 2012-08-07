@@ -1,0 +1,8 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\bin\Debug\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\bin\Debug\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\Shared.Properties.Resources.resources
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\Shared\obj\Debug\GenerateResource.write.1.tlog

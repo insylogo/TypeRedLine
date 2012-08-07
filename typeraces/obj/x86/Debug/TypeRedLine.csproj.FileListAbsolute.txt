@@ -1,0 +1,2 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.pdb

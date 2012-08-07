@@ -1,0 +1,16 @@
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\Races\races.trl
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\typeraces.exe.manifest
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\typeraces.application
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\typeraces.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\bin\x64\Release\Shared.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\ResolveAssemblyReference.cache
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\TypeRedLine.Main.resources
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\TypeRedLine.Properties.Resources.resources
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\GenerateResource.read.1.tlog
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\GenerateResource.write.1.tlog
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\typeraces.exe.manifest
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\typeraces.application
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\typeraces.exe
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\TypeRedLine\obj\x64\Release\typeraces.pdb

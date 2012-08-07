@@ -1,0 +1,15 @@
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.Form1.resources
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.Properties.Resources.resources
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\bin\Debug\typeraces.exe
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\bin\Debug\typeraces.pdb
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.exe
+c:\users\rob\documents\visual studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.pdb
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\bin\Debug\typeraces.exe.manifest
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\bin\Debug\typeraces.application
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.exe.manifest
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\obj\x86\Debug\typeraces.application
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\bin\Debug\Shared.dll
+C:\Users\Rob\Documents\Visual Studio 2010\Projects\typeraces\typeraces\bin\Debug\Shared.pdb
