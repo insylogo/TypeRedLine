@@ -73,31 +73,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>aRgMHz2G8XwEMJog6MWUkYWo0fQ=</dsig:DigestValue>
+        <dsig:DigestValue>2srbhBwc7zAvYvi2dvG6mOzGYSE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="16896">
       <assemblyIdentity name="typeraces" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yBOr5W2jHAk4kvAg9Sck8ZMocR8=</dsig:DigestValue>
+        <dsig:DigestValue>TOEYw4ZDtAOorYZPLUlINimefUA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TypeRacingDao.dll" size="12800">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TypeRacingDao.dll" size="13824">
       <assemblyIdentity name="TypeRacingDao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TiS9aj3ZNSnWiB4Zz+nsNv6sDSE=</dsig:DigestValue>
+        <dsig:DigestValue>tIIVcqznWmYjkrdc10/sNBmqcKw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

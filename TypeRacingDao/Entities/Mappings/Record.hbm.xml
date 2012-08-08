@@ -2,18 +2,14 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" assembly="TypeRacingDao" namespace="TypeRacingDao.Entities">
   <class
 		table="Record" name="Record" entity-name="Record">
-    <id
-			name="RecordId" column="id"
-			unsaved-value="0"
-      type="Int32"
-		>
-      <generator class="increment" />
+    <id name="RecordId" column="id" generator="increment" unsaved-value="0" type="Int32" />
       <!-- unsaved-value used to be null and generator was increment in h2.0.3 -->
-    </id>
 
 
-    <one-to-one name="Race" class="Race" entity-name="Race" />
-    <one-to-one name="Player" class="Player" entity-name="Player" />
+
+    <many-to-one name="Race" class="Race" entity-name="Race" column="race_id" />
+    <many-to-one name="Player" class="Player" entity-name="Player" column="player_id" />
+    
     <property name="CPM" column="cpm" type="double" />
     <property name="Accuracy" column="accuracy" type="double" />
   </class>

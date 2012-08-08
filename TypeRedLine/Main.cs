@@ -34,11 +34,16 @@ namespace TypeRedLine
         private int previousLength;
 
 
+
+
         private int currentHighlightStart;
         private int currentHighlightLength;
         private int currentLine;
 
         private IList<Race> races;
+        private IList<Record> records;
+
+        private Race currentRace;
 
         private Random gen;
         private DateTime? start;
@@ -47,6 +52,7 @@ namespace TypeRedLine
         private List<double> bestRates;
         private double cpm;
         private double wpm;
+        private IList<Player> players;
 
 
         public Main()
@@ -56,7 +62,9 @@ namespace TypeRedLine
             keyStrokeCount = 0;
             mistakeCount = 0;
 
-            races = new List<Race> {BaseDao.Get<Race>(1), BaseDao.Get<Race>(2) };
+            races = RaceDao.GetAll();
+            records = RecordDao.GetAll();
+            players = PlayerDao.GetAll();
 
             gen = new Random();
 
@@ -66,7 +74,14 @@ namespace TypeRedLine
 
             foreach (var t in races)
             {
-                bestRates.Add(0.0);
+                if (t.Records.Count > 0)
+                {
+                    bestRates.Add(t.Records.Max(rec => rec.CPM));
+                }
+                else
+                {
+                    bestRates.Add(0.0);
+                }
             }
 
 
@@ -97,7 +112,9 @@ namespace TypeRedLine
             lblCurrentWpm.Text = Resources.WPMString;
             lblBestWpm.Text = string.Format(BestWpmFormat, bestRates[currentTextIndex]);
 
-            currentText = races[currentTextIndex].Text;
+            currentRace = races[currentTextIndex];
+            currentText = currentRace.Text;
+            
             char[] space = { ' ' };
             words = new List<string>(currentText.Split(space));
 
@@ -162,7 +179,7 @@ namespace TypeRedLine
                         TimeSpan dur = finish.GetValueOrDefault().Subtract(start.GetValueOrDefault());
                         cpm = (currentText.Length/dur.TotalMilliseconds*1000*60);
                         wpm = (cpm / GameSettings.CharactersPerWord);
-
+                        double accuracy = ((double)keyStrokeCount - mistakeCount) / keyStrokeCount * 100;
                         if (progressBar.ProgressBar != null)
                             progressBar.ProgressBar.Value = progressBar.Maximum;
 
@@ -170,6 +187,18 @@ namespace TypeRedLine
                         if (wpm > bestRates[currentTextIndex])
                         {
                             bestRates[currentTextIndex] = wpm;
+                            Record newRecord = new Record
+                                                   {
+                                                       Accuracy = accuracy,
+                                                       CPM = cpm,
+                                                       Player = players[0],
+                                                       Race = currentRace
+                                                   };
+                            records.Add(newRecord);
+
+                            RecordDao.SaveOrUpdate(newRecord);
+                            
+
                             lblBestWpm.Text = string.Format(BestWpmFormat, wpm);
                         }
                         lblCurrentWpm.Text = string.Format(WpmFormat, wpm);
@@ -178,7 +207,7 @@ namespace TypeRedLine
                             dur.ToString(@"ss\.ff"),
                             cpm,
                             wpm,
-                            ((double)keyStrokeCount - mistakeCount) / keyStrokeCount * 100));
+                            accuracy));
 
                         
                         start = null;
