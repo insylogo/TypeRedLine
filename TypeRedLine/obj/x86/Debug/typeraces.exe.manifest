@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="19968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="typeraces.exe" size="16384">
       <assemblyIdentity name="typeraces" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>i2xSD4FKbWZzo0EtHbVBXgNiO04=</dsig:DigestValue>
+        <dsig:DigestValue>yBOr5W2jHAk4kvAg9Sck8ZMocR8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jhoKSnxC1V1uwNeYRhUZtOGhipU=</dsig:DigestValue>
+        <dsig:DigestValue>TiS9aj3ZNSnWiB4Zz+nsNv6sDSE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

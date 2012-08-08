@@ -105,9 +105,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\PlayerInfo.cs" />
-    <Compile Include="Entities\RaceInfo.cs" />
-    <Compile Include="Entities\RecordInfo.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +172,9 @@
       <Project>{1F42F059-E3A7-48C3-ABEA-26CFE190063F}</Project>
       <Name>TypeRacingDao</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

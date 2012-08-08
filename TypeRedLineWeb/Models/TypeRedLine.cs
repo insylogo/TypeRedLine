@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using Shared;
 using System.Web.Mvc;
 using System.Web.Security;
+using TypeRacingDao.Entities;
 
 namespace TypeRedLineWeb.Models
 {
@@ -16,10 +17,9 @@ namespace TypeRedLineWeb.Models
 
         public bool IsStarted { get; private set; }
 
-
-        public List<PlayerInfo> Players { get; set; } 
+        public List<Player> Players { get; set; } 
         
-        public Dictionary<PlayerInfo, double> Scores { get; set; }
+        public Dictionary<Player, double> Scores { get; set; }
 
         public string Text { get; set; }
 

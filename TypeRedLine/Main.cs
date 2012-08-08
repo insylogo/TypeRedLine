@@ -38,7 +38,7 @@ namespace TypeRedLine
         private int currentHighlightLength;
         private int currentLine;
 
-        private IList<RaceInfo> races;
+        private IList<Race> races;
 
         private Random gen;
         private DateTime? start;
@@ -56,19 +56,7 @@ namespace TypeRedLine
             keyStrokeCount = 0;
             mistakeCount = 0;
 
-            Type[] types = { typeof(PlayerInfo), typeof(RaceInfo) };
-            XmlSerializer serializer = new XmlSerializer(typeof(List<RaceInfo>), types);
-
-            var reader = new StreamReader(new FileStream(Application.StartupPath + "\\Races\\races.trl", FileMode.Open, FileAccess.Read));
-            
-
-            // original xml loading
-            //races = serializer.Deserialize(reader) as List<RaceInfo>;
-            reader.Close();
-
-
-            races = new List<RaceInfo> {new RaceInfo(BaseDao.Get<Race>(1)), new RaceInfo(BaseDao.Get<Race>(2)) };
-
+            races = new List<Race> {BaseDao.Get<Race>(1), BaseDao.Get<Race>(2) };
 
             gen = new Random();
 

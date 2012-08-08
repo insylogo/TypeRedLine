@@ -12,8 +12,20 @@ namespace TypeRacingDao.Entities
     [Serializable]
     public class Race
     {
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
         public virtual string Name { get; set; }
 
+        /// <summary>
+        /// Gets or sets the race id.
+        /// </summary>
+        /// <value>
+        /// The race id.
+        /// </value>
         public virtual int RaceId { get; set; }
 
         /// <summary>
