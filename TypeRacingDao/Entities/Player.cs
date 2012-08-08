@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace TypeRacingDao.Entities
 {
@@ -16,6 +17,7 @@ namespace TypeRacingDao.Entities
         /// <value>
         /// The player id.
         /// </value>
+        [DataMember]
         public virtual int PlayerId { get; set; }
 
         /// <summary>
@@ -24,6 +26,7 @@ namespace TypeRacingDao.Entities
         /// <value>
         /// The name.
         /// </value>
+        [DataMember]
         public virtual string Name { get; set; }
 
         /// <summary>
@@ -32,6 +35,7 @@ namespace TypeRacingDao.Entities
         /// <value>
         /// The records.
         /// </value>
+        [DataMember]
         public virtual IList<Record> Records { get; set; }
 
 

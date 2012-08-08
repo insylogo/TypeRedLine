@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -40,10 +41,14 @@ namespace TypeRedLine
         private int currentHighlightLength;
         private int currentLine;
 
-        private IList<Race> races;
-        private IList<Record> records;
+        private List<Race> races;
+        private List<Record> records;
+        
+
+        private IList<Player> players;
 
         private Race currentRace;
+        private Player currentPlayer;
 
         private Random gen;
         private DateTime? start;
@@ -52,19 +57,29 @@ namespace TypeRedLine
         private List<double> bestRates;
         private double cpm;
         private double wpm;
-        private IList<Player> players;
+        
 
 
         public Main()
         {
             InitializeComponent();
+            
             typingBoxStartLocation = new Point(0, 20);
             keyStrokeCount = 0;
             mistakeCount = 0;
 
-            races = RaceDao.GetAll();
-            records = RecordDao.GetAll();
+            races = RaceDao.GetAll().ToList();
+            records = new List<Record>();
+            foreach (var race in races)
+            {
+                records.AddRange(race.Records);
+            }
             players = PlayerDao.GetAll();
+
+            comboBox1.DataSource = players;
+            comboBox1.DisplayMember = "Name";
+            currentPlayer = players[0];
+
 
             gen = new Random();
 
@@ -105,12 +120,14 @@ namespace TypeRedLine
             txtTypingBox.Location = typingBoxStartLocation;
             txtTypingBox.Focus();
 
+
             lblCurrentWpm.Visible = true;
             lblBestWpm.Visible = true;
 
             currentTextIndex = gen.Next(races.Count);
             lblCurrentWpm.Text = Resources.WPMString;
-            lblBestWpm.Text = string.Format(BestWpmFormat, bestRates[currentTextIndex]);
+            
+            //lblBestWpm.Text = string.Format(BestWpmFormat, bestRates[currentTextIndex]);
 
             currentRace = races[currentTextIndex];
             currentText = currentRace.Text;
@@ -118,6 +135,7 @@ namespace TypeRedLine
             char[] space = { ' ' };
             words = new List<string>(currentText.Split(space));
 
+            UpdateBestWpm();
 
             rtbRaceText.Text = currentText;
 
@@ -144,6 +162,23 @@ namespace TypeRedLine
             rtbRaceText.SelectionFont = new Font(rtbRaceText.SelectionFont, FontStyle.Underline);
 
             txtTypingBox.ReadOnly = false;
+        }
+
+        private void UpdateBestWpm()
+        {
+            if (currentPlayer!= null 
+                && currentRace != null 
+                && currentPlayer.Records.Count > 0 
+                && currentPlayer.Records.Count(x => x.Race.RaceId == currentRace.RaceId) > 0)
+            {
+                lblBestWpm.Text = string.Format("Best WPM: {0:f2}",
+                                                currentPlayer.Records.Where(rec => rec.Race.RaceId == currentRace.RaceId)
+                                                    .Max(x => x.CPM) / 5);
+            }
+            else
+            {
+                lblBestWpm.Text = "No Records.";
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -184,22 +219,27 @@ namespace TypeRedLine
                             progressBar.ProgressBar.Value = progressBar.Maximum;
 
 
-                        if (wpm > bestRates[currentTextIndex])
+                        if (currentPlayer.Records.Count(x=>x.Race.RaceId == currentRace.RaceId) == 0
+                            || wpm > currentPlayer.Records.Where(x=>x.Race.RaceId == currentRace.RaceId).Max(x=>x.CPM))
                         {
                             bestRates[currentTextIndex] = wpm;
                             Record newRecord = new Record
                                                    {
                                                        Accuracy = accuracy,
                                                        CPM = cpm,
-                                                       Player = players[0],
+                                                       Player = currentPlayer,
                                                        Race = currentRace
                                                    };
                             records.Add(newRecord);
+                            currentPlayer.Records.Add(newRecord);
+                            currentRace.Records.Add(newRecord);
 
+                            PlayerDao.SaveOrUpdate(currentPlayer);
+                            RaceDao.SaveOrUpdate(currentRace);
                             RecordDao.SaveOrUpdate(newRecord);
                             
 
-                            lblBestWpm.Text = string.Format(BestWpmFormat, wpm);
+                            UpdateBestWpm();
                         }
                         lblCurrentWpm.Text = string.Format(WpmFormat, wpm);
 
@@ -310,6 +350,12 @@ namespace TypeRedLine
             {
                 keyStrokeCount++;
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPlayer = players.First(x => x.PlayerId == (comboBox1.SelectedValue as Player).PlayerId);
+            UpdateBestWpm();
         }
 
     }

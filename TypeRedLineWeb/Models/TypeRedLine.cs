@@ -10,7 +10,6 @@ namespace TypeRedLineWeb.Models
 {
     public class TypeRedLineModel
     {
-        private TimeSpan m_elapsedTime;
         private bool m_counting;
         private DateTime m_countDown;
 

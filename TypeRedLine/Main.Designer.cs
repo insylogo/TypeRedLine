@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.BindingSource bindingSource1;
             this.statusRace = new System.Windows.Forms.StatusStrip();
             this.progressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.pnlMain = new System.Windows.Forms.SplitContainer();
@@ -36,11 +38,14 @@
             this.lblBestWpm = new System.Windows.Forms.Label();
             this.lblCurrentWpm = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.statusRace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlMain)).BeginInit();
             this.pnlMain.Panel1.SuspendLayout();
             this.pnlMain.Panel2.SuspendLayout();
             this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // statusRace
@@ -74,6 +79,7 @@
             // pnlMain.Panel1
             // 
             this.pnlMain.Panel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.pnlMain.Panel1.Controls.Add(this.comboBox1);
             this.pnlMain.Panel1.Controls.Add(this.txtTypingBox);
             this.pnlMain.Panel1.Controls.Add(this.rtbRaceText);
             // 
@@ -146,6 +152,16 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(147, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +179,7 @@
             this.pnlMain.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlMain)).EndInit();
             this.pnlMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,6 +194,7 @@
         private System.Windows.Forms.ToolStripProgressBar progressBar;
         private System.Windows.Forms.Label lblCurrentWpm;
         private System.Windows.Forms.Label lblBestWpm;
+        private System.Windows.Forms.ComboBox comboBox1;
 
 
     }

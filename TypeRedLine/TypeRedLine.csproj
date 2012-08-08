@@ -95,6 +95,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -126,6 +127,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.Entities.Player.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.Entities.Race.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.Entities.Record.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.PlayerDao.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.RaceDao.datasource" />
+    <None Include="Properties\DataSources\TypeRacingDao.RecordDao.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
