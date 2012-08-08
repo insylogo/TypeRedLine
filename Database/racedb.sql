@@ -50,12 +50,16 @@ DROP TABLE IF EXISTS `record`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `record` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `race_id` int(11) NOT NULL,
-  `player_id` int(11) NOT NULL,
+  `race_id` int(11) DEFAULT NULL,
+  `player_id` int(11) DEFAULT NULL,
   `cpm` double NOT NULL,
   `accuracy` double NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`),
+  KEY `player_id_idx` (`player_id`),
+  KEY `race_id_idx` (`race_id`),
+  CONSTRAINT `player_id` FOREIGN KEY (`player_id`) REFERENCES `player` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `race_id` FOREIGN KEY (`race_id`) REFERENCES `race` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-08-07 16:07:37
+-- Dump completed on 2012-08-07 22:22:08
